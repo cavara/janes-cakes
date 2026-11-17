@@ -42,3 +42,9 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/* Portfolio card images: same height, cropped neatly */
+.portfolio-img {
+  height: 180px;
+  object-fit: cover;
+}
