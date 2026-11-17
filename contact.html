@@ -4,16 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contact Us </title>
+    <title>Contact | Jane's Cakes</title>
     <!-- Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
 
 <body>
   <nav class="navbar navbar-expand-sm bg-body-tertiary">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Jane's Cakes</a>
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="assets/images/Janes_Cakes_Logo.svg" alt="Jane's Cakes logo" class="logo me-2">
+          Jane's Cakes
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -25,10 +30,11 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
@@ -37,7 +43,7 @@
               <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -45,33 +51,30 @@
     </nav>
     <!-- main content -->
     <main>
-        <!-- About section links to #about href in navbar -->
-        <section id="about" class="container">
+        <section id="contact-us" class="container">
             <div class="row">
                 <!-- my-4 used to add top and bottom margin to heading -->
                 <div class="col-12 text-center my-4">
                     <h2 class="display-5">Contact Us Today</h2>
                 </div>
-                <!-- mb-4 used to add margin under image -->
-                
-                 
-                <div class="col-12 col-md-6 mb-4">
-                    <!-- img-fluid class makes the image responsive to its container -->
-                   
-                   
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40029.01986437422!2d-0.21353383842786852!3d51.16722316460872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875e4c636715943%3A0xc81693db4ede67e!2sHorley!5e0!3m2!1sen!2suk!4v1794917066344!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-         <div class="col-12 text-center my-4">
-                    <h4> Address: 32 Milwood Drive, Horley Surrey, RH10 0NU</h4 >
+
+                <!-- Map and address: shown second on mobile, left on desktop -->
+                <div class="col-12 col-md-6 mb-4 order-2 order-md-1">
+                    <iframe class="map-frame" title="Map showing Jane's Cakes in Horley, Surrey"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40029.01986437422!2d-0.21353383842786852!3d51.16722316460872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875e4c636715943%3A0xc81693db4ede67e!2sHorley!5e0!3m2!1sen!2suk!4v1794917066344!5m2!1sen!2suk"
+                        allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <address class="contact-details mt-3">
+                        <strong>Jane's Cakes</strong><br>
+                        32 Milwood Drive, Horley, Surrey, RH10 0NU<br>
+                        <!-- TODO: replace with real email and phone number, or remove -->
+                        <a href="mailto:hello@janescakes.co.uk">hello@janescakes.co.uk</a><br>
+                        <a href="tel:+441234567890">01234 567890</a>
+                    </address>
                 </div>
-                  </div>
-                <!-- mb-4 used to add margin under text -->
-                <div class="col-12 col-md-6 mb-4">
-                    <p>
-                        I would love to hear from you if you need a cake for a special occasion.
-                    </p>
-                    <p>
-                        Please contact me using the form below and I will endeavour to contact you within 48 hours.
-                    </p>     
+
+                <!-- Enquiry form: shown first on mobile, right on desktop -->
+                <div class="col-12 col-md-6 mb-4 order-1 order-md-2">
+                    <p>Planning a special occasion? Tell me about the cake you have in mind.</p>
                     <form class="contact-form">
   <div class="row">
     <div class="col-md-6 mb-3">
@@ -93,7 +96,7 @@
     <div class="col-md-6 mb-3">
       <label for="occasion" class="form-label">Occasion</label>
       <select class="form-select" id="occasion" name="occasion">
-        <option selected>Choose...</option>
+        <option value="" selected disabled>Choose...</option>
         <option>Birthday</option>
         <option>Wedding</option>
         <option>Baby shower</option>
@@ -112,10 +115,10 @@
   </div>
 
   <button type="submit" class="btn btn-cake w-100">Send enquiry</button>
-</form>   
+</form>
+                    <p class="small text-muted text-center mt-2">I'll get back to you within 48 hours.</p>
                 </div>
             </div>
-        </section>
         </section>
     </main>
 
