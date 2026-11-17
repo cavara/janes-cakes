@@ -76,3 +76,73 @@ p {
 .contact-details a {
   color: #b5566e;
 }
+
+.navbar {
+  background-color: #fdf2f4;
+  border-bottom: 3px solid #d98a9c;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-brand {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #8b2f52;
+}
+
+.navbar .nav-link {
+  color: darkslateblue;
+  font-weight: 500;
+  margin: 0 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #8b2f52;
+  border-bottom-color: #d98a9c;
+}
+
+.navbar {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: #fdf2f4;
+  border-bottom: 3px solid #d98a9c;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+/* "Jane's Cakes" text styled to match the logo wordmark */
+.navbar-brand,
+.navbar-brand:hover {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #8a2f52;
+}
+
+/* Menu links: berry colour and pink underline for hover and current page */
+.navbar .nav-link {
+  color: darkslateblue;
+  font-weight: 500;
+  margin: 0 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #8a2f52;
+  border-bottom-color: #d98a9c;
+}
+
+/* Darker pink on hover for the custom button */
+.btn-cake:hover {
+  background-color: #c9768a;
+  color: white;
+}
