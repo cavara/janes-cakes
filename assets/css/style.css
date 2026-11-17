@@ -1,0 +1,44 @@
+.card-img-top {
+  height: 250px; /* pick whatever height looks right */
+  object-fit: cover; /* crops to fill the box without distorting */
+}
+.contact-form {
+  background-color: #fdf2f4;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+/* pink glow when you click into a box */
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: #d98a9c;
+  box-shadow: 0 0 0 0.2rem rgba(217, 138, 156, 0.25);
+}
+
+/* custom pink button */
+.btn-cake {
+  background-color: #d98a9c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem;
+  font-weight: 600;
+}
+
+p {
+  color: darkslateblue;
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: 1fr;
+  gap:10px;
+  
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

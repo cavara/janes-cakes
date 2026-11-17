@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us </title>
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Jane's Cakes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- main content -->
+    <main>
+        <!-- About section links to #about href in navbar -->
+        <section id="about" class="container">
+            <div class="row">
+                <!-- my-4 used to add top and bottom margin to heading -->
+                <div class="col-12 text-center my-4">
+                    <h2 class="display-5">Contact Us Today</h2>
+                </div>
+                <!-- mb-4 used to add margin under image -->
+                
+                 
+                <div class="col-12 col-md-6 mb-4">
+                    <!-- img-fluid class makes the image responsive to its container -->
+                   
+                   
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40029.01986437422!2d-0.21353383842786852!3d51.16722316460872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875e4c636715943%3A0xc81693db4ede67e!2sHorley!5e0!3m2!1sen!2suk!4v1794917066344!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+         <div class="col-12 text-center my-4">
+                    <h4> Address: 32 Milwood Drive, Horley Surrey, RH10 0NU</h4 >
+                </div>
+                  </div>
+                <!-- mb-4 used to add margin under text -->
+                <div class="col-12 col-md-6 mb-4">
+                    <p>
+                        I would love to hear from you if you need a cake for a special occasion.
+                    </p>
+                    <p>
+                        Please contact me using the form below and I will endeavour to contact you within 48 hours.
+                    </p>     
+                    <form class="contact-form">
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="firstName" class="form-label">First name</label>
+      <input type="text" class="form-control" id="firstName" name="firstName" required />
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="lastName" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="lastName" name="lastName" required />
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required />
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="occasion" class="form-label">Occasion</label>
+      <select class="form-select" id="occasion" name="occasion">
+        <option selected>Choose...</option>
+        <option>Birthday</option>
+        <option>Wedding</option>
+        <option>Baby shower</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="date" class="form-label">Date needed</label>
+      <input type="date" class="form-control" id="date" name="date" />
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="message" class="form-label">Tell me about your dream cake</label>
+    <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-cake w-100">Send enquiry</button>
+</form>   
+                </div>
+            </div>
+        </section>
+        </section>
+    </main>
+
+    <!-- Contact section -->
+ <footer id="contact" class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center my-4">
+          <p class="mt-3">
+            Got an idea for a cake you'd love to see brought to life?
+            <a href="contact.html">Get in touch</a> and let's make it happen.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap JS Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
