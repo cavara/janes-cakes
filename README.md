@@ -262,6 +262,14 @@ The main photo on the home page (`women-baking-cakes.webp`) was generated with *
 
 ## Planned Future Updates
 
-- <!-- e.g. Online ordering and payment -->
-- <!-- e.g. Customer reviews / testimonials -->
-- <!-- e.g. Working back-end for the contact form -->
+| Update | Benefit |
+|--------|---------|
+| **Working contact form**, using a service such as [Formspree](https://formspree.io/) or EmailJS so enquiries are emailed to Jane | At the moment the form doesn't send anything. This would let customers place real enquiries. |
+| **Form confirmation message** shown after an enquiry is sent | Reassures customers that their message has arrived. |
+| **Customer reviews and testimonials** section on the home page | Builds trust with new customers through social proof. |
+| **Price guide** showing starting prices for each cake type and size | Helps customers check their budget before getting in touch. |
+| **Portfolio filters** (e.g. Birthdays, Weddings, Graduations) and a lightbox to view photos full size | Makes the growing portfolio easier to browse. |
+| **Online ordering and payment**, using a service such as Stripe | Customers could book and pay a deposit online. |
+| **Social media links** (Instagram, Facebook) in a site-wide footer | Instagram is popular for cake businesses, so visitors could see Jane's latest bakes. |
+| **Own photography** to replace the stock and AI-generated images | Shows Jane's real cakes and removes any copyright concerns. |
+| **FAQ page** covering delivery, allergies, dietary options and how far in advance to order | Answers common questions so customers don't have to ask. |
