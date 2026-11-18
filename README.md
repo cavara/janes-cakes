@@ -189,13 +189,25 @@ The home page originally scored 58 for Performance. This was improved to 98 by c
 - <!-- TODO: any other code snippets or tutorials used -->
 
 ### Images
-| Image | Source |
-|-------|--------|
-| <!-- e.g. sponge.jpg --> | <!-- URL / author --> |
-| <!-- e.g. chocolate.jpg --> | |
-| <!-- e.g. carrot-cake-beauty-4.webp --> | |
-| <!-- e.g. frosted.jpg --> | |
-| <!-- e.g. Jane.jpg --> | |
+
+All images are used for educational purposes only as part of a bootcamp project.
+
+| Image | Used on | Source |
+|-------|---------|--------|
+| `women-baking-cakes.webp` | Home – main photo | Generated with Canva's AI image generator |
+| `Jane.jpg` | About – photo of Jane | Google Images <!-- TODO: original source URL / photographer --> |
+| `Janes_Cakes_Logo.svg` | Logo and favicon (all pages) | Generated with Grok (xAI) |
+| `floral-drip-cake.jpg` | Home – Birthdays card; Portfolio | Google Images <!-- TODO: original source URL --> |
+| `funfetti-cake.jpg` | Home – Weddings card; Portfolio | Google Images <!-- TODO: original source URL --> |
+| `floral-wedding-cake.jpg` | Home – Graduations card; Portfolio | Google Images <!-- TODO: original source URL --> |
+| `red-velvet-cake.jpg` | Home – Baby Showers card; Portfolio | Google Images <!-- TODO: original source URL --> |
+| `sponge.jpg` | Portfolio | Google Images <!-- TODO: original source URL --> |
+| `chocolate.jpg` | Portfolio | Google Images <!-- TODO: original source URL --> |
+| `carrot-cake-beauty-4.webp` | Portfolio | Google Images <!-- TODO: original source URL --> |
+| `frosted.jpg` | Portfolio (Frosted and Custom Cakes cards) | Google Images <!-- TODO: original source URL --> |
+| `macaron-drip-cake.jpg` | Portfolio | Google Images <!-- TODO: original source URL --> |
+| `chocolate-orange-cake.webp` | Portfolio | Google Images <!-- TODO: original source URL --> |
+| `raspberry-layer-cake.webp` | Portfolio | Google Images <!-- TODO: original source URL --> |
 
 ### Maps / Media
 - Map embedded from [Google Maps](https://www.google.com/maps)
@@ -217,7 +229,7 @@ I used **Claude** (Anthropic's AI assistant) during this project as a coding ass
 
 AI also suggested some styling and layout changes, which I reviewed and adapted.
 
-<!-- TODO: add any other AI tools you used, e.g. an image generator for photos, or AI help with the original page content or logo. Delete this comment if there are none. -->
+The main photo on the home page (`women-baking-cakes.webp`) was generated with **Canva's AI image generator**. The Jane's Cakes logo (`Janes_Cakes_Logo.svg`) was generated with **Grok** (xAI).
 
 **What I did myself:**
 
