@@ -1,113 +1,27 @@
-.card-img-top {
-  height: 250px; /* pick whatever height looks right */
-  object-fit: cover; /* crops to fill the box without distorting */
-}
-.contact-form {
-  background-color: #fdf2f4;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-/* pink glow when you click into a box */
-.contact-form .form-control:focus,
-.contact-form .form-select:focus {
-  border-color: #d98a9c;
-  box-shadow: 0 0 0 0.2rem rgba(217, 138, 156, 0.25);
-}
+/* ==========================================
+   Colours
+   Pale pink  #fdf2f4   Pink     #d98a9c
+   Berry      #8a2f52   Charcoal #4a3a3f
+   ========================================== */
 
-/* custom pink button */
-.btn-cake {
-  background-color: #d98a9c;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 0.6rem;
-  font-weight: 600;
-}
-
+/* ---------- Text ---------- */
 p {
-  color: darkslateblue;
+  color: #4a3a3f; /* warm charcoal: soft, easy to read, suits the pinks */
 }
 
+h2,
+h3 {
+  color: #8a2f52; /* berry, from the logo */
+}
+
+/* ---------- Layout ---------- */
+/* Note: this overrides Bootstrap's .container on every page */
 .container {
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-columns: 1fr;
-  gap:10px;
-  
+  gap: 10px;
 }
 
-@media only screen and (min-width: 768px) {
-  body {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-/* Portfolio card images: same height, cropped neatly */
-.portfolio-img {
-  height: 180px;
-  object-fit: cover;
-}
-
-/* Keep the logo within the navbar height */
-.logo {
-  height: 50px;
-  width: auto;
-}
-
-/* Contact page map: matches the form panel */
-.map-frame {
-  border: 0;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  width: 100%;
-  height: 350px;
-}
-
-/* Contact details under the map */
-.contact-details {
-  background-color: #fdf2f4;
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  font-style: normal;
-  color: darkslateblue;
-}
-
-.contact-details a {
-  color: #b5566e;
-}
-
-.navbar {
-  background-color: #fdf2f4;
-  border-bottom: 3px solid #d98a9c;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-.navbar-brand {
-  font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #8b2f52;
-}
-
-.navbar .nav-link {
-  color: darkslateblue;
-  font-weight: 500;
-  margin: 0 0.25rem;
-  border-bottom: 2px solid transparent;
-}
-
-.navbar .nav-link:hover,
-.navbar .nav-link.active {
-  color: #8b2f52;
-  border-bottom-color: #d98a9c;
-}
-
-.navbar {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
 /* ---------- Navbar ---------- */
 .navbar {
   background-color: #fdf2f4;
@@ -115,6 +29,12 @@ p {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+/* Keep the logo within the navbar height */
+.logo {
+  height: 50px;
+  width: auto;
 }
 
 /* "Jane's Cakes" text styled to match the logo wordmark */
@@ -129,7 +49,7 @@ p {
 
 /* Menu links: berry colour and pink underline for hover and current page */
 .navbar .nav-link {
-  color: darkslateblue;
+  color: #4a3a3f;
   font-weight: 500;
   margin: 0 0.25rem;
   border-bottom: 2px solid transparent;
@@ -141,8 +61,62 @@ p {
   border-bottom-color: #d98a9c;
 }
 
-/* Darker pink on hover for the custom button */
-.btn-cake:hover {
-  background-color: #c9768a;
+/* ---------- Buttons ---------- */
+.btn-cake {
+  background-color: #d98a9c;
   color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem;
+  font-weight: 600;
+}
+
+.btn-cake:hover {
+  background-color: #c9768a; /* slightly darker pink on hover */
+  color: white;
+}
+
+/* ---------- Cards ---------- */
+.card-img-top {
+  height: 250px;    /* home page card images */
+  object-fit: cover; /* crops to fill the box without distorting */
+}
+
+.portfolio-img {
+  height: 180px; /* smaller images for the 4-column portfolio grid */
+}
+
+/* ---------- Contact page ---------- */
+.contact-form {
+  background-color: #fdf2f4;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Pink glow when you click into a box */
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: #d98a9c;
+  box-shadow: 0 0 0 0.2rem rgba(217, 138, 156, 0.25);
+}
+
+.map-frame {
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  height: 350px;
+}
+
+.contact-details {
+  background-color: #fdf2f4;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-style: normal;
+  color: #4a3a3f;
+}
+
+.contact-details a {
+  color: #8a2f52;
 }
