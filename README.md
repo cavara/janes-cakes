@@ -227,6 +227,7 @@ I used **Claude** (Anthropic's AI assistant) during this project as a coding ass
 | Validation | Explaining and fixing W3C HTML validator errors (spaces in image filenames, heading order, trailing slashes) |
 | Performance and accessibility | Identifying the oversized home page image, compressing it to WebP, adding lazy loading, meta descriptions and a favicon, and fixing a colour contrast issue flagged by Lighthouse |
 | Process | Explaining how to deploy with GitHub Pages, take full-page screenshots in Chrome DevTools, and run the HTML, CSS and Lighthouse tests |
+| Contact form | Integrating my existing contact form with [Formspree](https://formspree.io/) so enquiries are sent by email (form action, method, email subject line and the delivery or collection option) |
 
 AI also suggested some styling and layout changes, which I reviewed and adapted.
 
