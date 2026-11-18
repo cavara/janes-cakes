@@ -244,11 +244,19 @@ The main photo on the home page (`women-baking-cakes.webp`) was generated with *
 
 ## Colour Palette
 
-<!-- TODO: add palette image, e.g. generated with https://coolors.co -->
-<!-- ![Colour palette](docs/colour-palette.png) -->
+The colours were taken from the Jane's Cakes logo to give the site a warm, friendly look that matches the brand. Every text and background pairing was checked against the WCAG AA contrast standard (4.5 : 1).
+
+![Jane's Cakes colour palette](docs/colour-palette.png)
 
 | Colour | Hex | Used for |
 |--------|-----|----------|
+| Pale Pink | `#FDF2F4` | Navbar, contact form and contact details backgrounds |
+| Pink | `#D98A9C` | Navbar border, active link underline, input focus glow |
+| Button Rose | `#B5566E` | "Order a cake" and "Send enquiry" buttons (white text, 4.6 : 1 contrast) |
+| Berry | `#8A2F52` | Headings, "Jane's Cakes" brand name, hover and active menu links |
+| Charcoal | `#4A3A3F` | Body text and menu links |
+
+--------|-----|----------|
 | | | |
 
 ---
