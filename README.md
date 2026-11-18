@@ -11,6 +11,8 @@
 ## Table of Contents
 
 1. [Website Purpose](#website-purpose)
+   - [Target Audience](#target-audience)
+   - [User Stories](#user-stories)
 2. [Features and User Benefits](#features-and-user-benefits)
 3. [Technologies Used](#technologies-used)
 4. [Deployment Procedure](#deployment-procedure)
@@ -27,9 +29,29 @@
 
 ## Website Purpose
 
-Jane's Cakes is a four-page website for a home baker offering custom cakes for birthdays, weddings, graduations and baby showers.
+Jane's Cakes is a four-page website for Jane, a home baker based in Horley, Surrey, who makes custom cakes for birthdays, weddings, graduations, baby showers and other celebrations.
 
-<!-- TODO: Describe who the site is for and what it aims to achieve (e.g. showcase Jane's work, build trust, generate enquiries). -->
+For the last five years Jane's business has grown through word of mouth with local customers. This website takes it online so that new customers across the UK can find her, see her work and order a cake.
+
+The website aims to:
+
+- **Showcase Jane's cakes** with a portfolio of her designs, so visitors can see the quality and variety of her work.
+- **Build trust** by introducing Jane, her story and her approach to baking, so customers feel confident ordering from a small independent baker.
+- **Generate enquiries** by making it quick and easy to get in touch, with an "Order a cake" button on every page and a simple enquiry form.
+
+### Target Audience
+
+- People planning a celebration (a birthday, wedding, graduation or baby shower) who want a cake that is personal and made to order.
+- Customers who prefer a local, independent baker to a supermarket or chain.
+- Existing customers who already know Jane and want an easy way to place a new order.
+
+### User Stories
+
+- As a first-time visitor, I want to understand straight away what Jane's Cakes offers, so I can decide if it suits my event.
+- As a customer planning a celebration, I want to see examples of previous cakes, so I can judge the quality and get ideas for my own.
+- As a potential customer, I want to learn about the person baking my cake, so I feel confident ordering.
+- As a customer ready to order, I want a simple way to send my requirements and date, so I can book a cake quickly.
+- As a mobile user, I want the site to be easy to read and navigate on my phone.
 
 ---
 
@@ -37,15 +59,21 @@ Jane's Cakes is a four-page website for a home baker offering custom cakes for b
 
 | Page | Features | User Benefit |
 |------|----------|--------------|
-| **Home** (`index.html`) | Navigation bar, welcome section, cards for Birthdays, Weddings, Graduations and Baby Showers, call-to-action link to Contact | <!-- TODO --> |
-| **About** (`about.html`) | Introduction to Jane, her story and photo, link to Contact | <!-- TODO --> |
-| **Portfolio** (`portfolio.html`) | Gallery cards for Sponge, Chocolate, Carrot and Frosted cakes | <!-- TODO --> |
-| **Contact** (`contact.html`) | Contact form, embedded Google Map (Horley) | <!-- TODO --> |
+| **Home** (`index.html`) | Welcome section with photo and introduction; cards for the four main occasions (Birthdays, Weddings, Graduations, Baby Showers); "Order a cake" button | Visitors can see within seconds what the business offers and which occasions it caters for, with a clear next step if they want to order. |
+| **About** (`about.html`) | Jane's story, her experience and her approach to ingredients and baking; "Order a cake" button | Builds trust by putting a face and a story behind the business, showing customers they are buying from a skilled, caring baker. |
+| **Portfolio** (`portfolio.html`) | Gallery of 12 cake styles in a responsive grid (4 per row on desktop, 2 on tablet, 1 on mobile), each with a short description | Lets customers browse real examples of Jane's work, compare styles and get inspiration before they get in touch. |
+| **Contact** (`contact.html`) | Enquiry form (name, email, occasion, date needed, cake description); embedded Google Map; address and contact details; 48-hour response promise | Makes ordering simple: customers can send everything Jane needs in one go, see where she is based, and know when to expect a reply. On mobile the form appears first. |
 
 **Site-wide features:**
-- Responsive Bootstrap navigation bar on every page
-- Mobile-friendly layout
-- <!-- TODO: add footer / social links / other shared features -->
+
+| Feature | User Benefit |
+|---------|--------------|
+| Sticky navigation bar with logo, highlighted current page and "Order a cake" button | Visitors always know where they are and can move between pages or start an order from anywhere on the site. |
+| Responsive design (Bootstrap 5) with a collapsing hamburger menu on small screens | The site is easy to use on phones, tablets and desktops. |
+| Consistent brand colours and logo across every page, plus a logo favicon | A professional, recognisable look that matches Jane's brand and builds confidence. |
+| Footer call to action ("Got an idea for a cake...? Get in touch") | Gives visitors one more prompt to get in touch when they reach the end of a page. |
+| Accessibility: descriptive alt text, logical heading order, colour contrast that meets WCAG AA | The site can be used by people with screen readers or visual impairments (Lighthouse Accessibility score of 100 on every page). |
+| Optimised images with lazy loading | Pages load quickly, even on mobile data (Lighthouse Performance 96–99). |
 
 ---
 
