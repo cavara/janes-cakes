@@ -129,7 +129,14 @@ Full-page screenshots of every page, taken with Chrome DevTools. Click an image 
 
 | Bug / Error | Cause | Fix | Status |
 |-------------|-------|-----|--------|
-| <!-- e.g. Nav "active" class shows Home on every page --> | | | <!-- Fixed / Open --> |
+| W3C HTML validator flagged image filenames as illegal (e.g. `images (5).jpg`) | Spaces and brackets are not allowed in a URL path | Renamed all images to lowercase hyphenated names (e.g. `floral-drip-cake.jpg`) and updated every `src` | Fixed |
+| W3C HTML validator: "no heading with a computed level of 1" | Each page's main heading used `<h2>` | Changed the main heading on each page to `<h1>`, keeping the `display-5` class so it looks the same | Fixed |
+| W3C HTML validator: "Trailing slash on void elements" info messages | Tags such as `<img ... />` and `<meta ... />` were written with a closing slash | Removed the trailing slashes from all void elements | Fixed |
+| Stray `</style>` in `index.html` and an extra `</section>` in `contact.html` | Leftover closing tags with no matching opening tag | Deleted the unmatched tags | Fixed |
+| Navbar showed "Home" as the active page on every page | The navbar was copied between pages without updating the `active` class | Moved `active` and `aria-current="page"` to the correct link on each page | Fixed |
+| Logo displayed at full size and stretched the navbar | The `.logo` class had no CSS rule | Added `.logo { height: 50px; width: auto; }` to `style.css` | Fixed |
+| Contact page form, button and logo had no custom styling | `contact.html` did not link to `style.css`, and Bootstrap was linked twice | Added the `style.css` link after Bootstrap and removed the duplicate Bootstrap link | Fixed |
+| Mobile hamburger menu missing and stray text in the navbar | The opening `<button class="navbar-toggler"` line was deleted by accident while editing | Restored the missing line | Fixed |
 
 ---
 
