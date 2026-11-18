@@ -2,6 +2,7 @@
    Colours
    Pale pink  #fdf2f4   Pink     #d98a9c
    Berry      #8a2f52   Charcoal #4a3a3f
+   Button     #b5566e
    ========================================== */
 
 /* ---------- Text ---------- */
@@ -64,7 +65,7 @@ h3 {
 
 /* ---------- Buttons ---------- */
 .btn-cake {
-  background-color: #d98a9c;
+  background-color: #b5566e; /* deeper pink: white text passes WCAG AA contrast (4.6:1) */
   color: white;
   border: none;
   border-radius: 8px;
@@ -73,7 +74,7 @@ h3 {
 }
 
 .btn-cake:hover {
-  background-color: #c9768a; /* slightly darker pink on hover */
+  background-color: #9c3f58; /* darker pink on hover */
   color: white;
 }
 

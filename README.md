@@ -140,6 +140,7 @@ Full-page screenshots of every page, taken with Chrome DevTools. Click an image 
 | W3C HTML validator: "h3 follows h1, skipping 1 heading level" | Sub-headings and card titles used `<h3>` directly under the page's `<h1>` | Changed them to `<h2>` and added Bootstrap's `h3` / `h5` classes so they look the same | Fixed |
 | Lighthouse Performance score of 58 on the home page (mobile) | The main home page photo was a 3.9 MB, 1264×1264 PNG | Resized to 800×800 and converted to WebP (81 KB, about 98% smaller) | Fixed |
 | Lighthouse SEO and Best Practices points lost | Pages had no meta description, and the missing favicon caused a console error | Added a meta description to each page and linked the logo as the favicon | Fixed |
+| Lighthouse Accessibility score of 96 on the contact page: "insufficient contrast ratio" | White text on the light pink `.btn-cake` button (`#d98a9c`) had a contrast ratio of only 2.6:1; WCAG AA needs 4.5:1 | Changed the button to a deeper pink (`#b5566e`, 4.6:1) and the hover colour to `#9c3f58` | Fixed |
 
 ---
 
