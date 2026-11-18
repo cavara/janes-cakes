@@ -1,10 +1,10 @@
 # Jane's Cakes
 
-**Live site:** [https://cavara.github.io/janes-cakes/](https://cavara.github.io/janes-cakes/) <!-- TODO: confirm this link once GitHub Pages is enabled -->
+**Live site:** [https://cavara.github.io/janes-cakes/](https://cavara.github.io/janes-cakes/)
 
 **Repository:** [https://github.com/cavara/janes-cakes](https://github.com/cavara/janes-cakes)
 
-![Jane's Cakes logo](assets/images/Janes_Cakes_Logo.svg)
+![Jane's Cakes shown on desktop, laptop, tablet and phone](docs/screenshots/mockup.png)
 
 ---
 
@@ -15,8 +15,6 @@
 3. [Technologies Used](#technologies-used)
 4. [Deployment Procedure](#deployment-procedure)
 5. [Screenshots](#screenshots)
-   - [Desktop Views](#desktop-views)
-   - [Mobile Views](#mobile-views)
 6. [Testing and Validation](#testing-and-validation)
 7. [Bugs / Errors](#bugs--errors)
 8. [Credits and Attribution](#credits-and-attribution)
@@ -88,23 +86,14 @@ Then open `index.html` in a browser (or use the VS Code Live Server extension).
 
 ## Screenshots
 
-### Desktop Views
+Full-page screenshots of every page, taken with Chrome DevTools. Click an image to view it full size.
 
-| Page | Screenshot |
-|------|------------|
-| Home | <!-- ![Home - desktop](docs/screenshots/home-desktop.png) --> |
-| About | <!-- ![About - desktop](docs/screenshots/about-desktop.png) --> |
-| Portfolio | <!-- ![Portfolio - desktop](docs/screenshots/portfolio-desktop.png) --> |
-| Contact | <!-- ![Contact - desktop](docs/screenshots/contact-desktop.png) --> |
-
-### Mobile Views
-
-| Page | Screenshot |
-|------|------------|
-| Home | <!-- ![Home - mobile](docs/screenshots/home-mobile.png) --> |
-| About | <!-- ![About - mobile](docs/screenshots/about-mobile.png) --> |
-| Portfolio | <!-- ![Portfolio - mobile](docs/screenshots/portfolio-mobile.png) --> |
-| Contact | <!-- ![Contact - mobile](docs/screenshots/contact-mobile.png) --> |
+| Page | Desktop | Mobile |
+|------|---------|--------|
+| Home | <img src="docs/screenshots/home-desktop.png" alt="Home page on desktop" width="450"> | <img src="docs/screenshots/home-mobile.png" alt="Home page on mobile" width="200"> |
+| About | <img src="docs/screenshots/about-desktop.png" alt="About page on desktop" width="450"> | <img src="docs/screenshots/about-mobile.png" alt="About page on mobile" width="200"> |
+| Portfolio | <img src="docs/screenshots/portfolio-desktop.png" alt="Portfolio page on desktop" width="450"> | <img src="docs/screenshots/portfolio-mobile.png" alt="Portfolio page on mobile" width="200"> |
+| Contact | <img src="docs/screenshots/contact-desktop.png" alt="Contact page on desktop" width="450"> | <img src="docs/screenshots/contact-mobile.png" alt="Contact page on mobile" width="200"> |
 
 ---
 
