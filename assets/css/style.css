@@ -122,3 +122,14 @@ h3 {
 .contact-details a {
   color: #8a2f52;
 }
+/* Delivery & collection cards (contact page) */
+.info-card {
+  background-color: #fdf2f4;
+  border-left: 4px solid #d98a9c;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+}
+
+.info-card p {
+  margin-bottom: 0;
+}

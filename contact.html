@@ -79,7 +79,9 @@
                 <!-- Enquiry form: shown first on mobile, right on desktop -->
                 <div class="col-12 col-md-6 mb-4 order-1 order-md-2">
                     <p>Planning a special occasion? Tell me about the cake you have in mind.</p>
-                    <form class="contact-form">
+                    <!-- Formspree sends each enquiry to Jane by email -->
+                    <form class="contact-form" action="https://formspree.io/f/xyewjnql" method="POST">
+  <input type="hidden" name="_subject" value="New cake enquiry from the Jane's Cakes website">
   <div class="row">
     <div class="col-md-6 mb-3">
       <label for="firstName" class="form-label">First name</label>
@@ -113,14 +115,72 @@
     </div>
   </div>
 
+  <fieldset class="mb-3">
+    <legend class="form-label fs-6">Delivery or collection?</legend>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="delivery" id="collection-option" value="Collection" checked>
+      <label class="form-check-label" for="collection-option">Collect from Horley</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="delivery" id="delivery-option" value="Delivery">
+      <label class="form-check-label" for="delivery-option">Delivery (add your postcode below)</label>
+    </div>
+  </fieldset>
+
   <div class="mb-3">
-    <label for="message" class="form-label">Tell me about your dream cake</label>
-    <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+    <label for="message" class="form-label">Tell me about your dream cake (and your postcode if you need delivery)</label>
+    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
   </div>
 
   <button type="submit" class="btn btn-cake w-100">Send enquiry</button>
 </form>
                     <p class="small text-muted text-center mt-2">I'll get back to you within 48 hours.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Delivery and practical information -->
+        <section id="delivery" class="container pb-4">
+            <div class="text-center my-4">
+                <h2 class="display-6">Delivery &amp; Collection</h2>
+                <p>Getting your cake safely from my kitchen to your celebration matters as much as baking it.</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                <div class="col">
+                    <div class="info-card h-100">
+                        <h3 class="h5">Collection</h3>
+                        <p>Free collection from my kitchen in Horley, Surrey, at a time that suits you. I'll confirm the address and a collection slot when you order.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="info-card h-100">
+                        <h3 class="h5">Local delivery</h3>
+                        <p>I deliver within 15 miles of Horley, including Crawley, Reigate, Redhill and Gatwick. Delivery costs £10, and is free on orders over £75.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="info-card h-100">
+                        <h3 class="h5">Wedding and tiered cakes</h3>
+                        <p>Tiered and wedding cakes are always delivered and set up by me at your venue, so they arrive looking perfect. Further afield? Just ask.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="info-card h-100">
+                        <h3 class="h5">How far ahead to order</h3>
+                        <p>At least 2 weeks for celebration cakes, and 3 to 6 months for wedding cakes. Short notice? Get in touch and I'll do my best.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="info-card h-100">
+                        <h3 class="h5">Travelling with your cake</h3>
+                        <p>Every cake comes in a sturdy box. Carry it flat in the car footwell or boot, never on a seat, keep the car cool, and drive gently round corners.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="info-card h-100">
+                        <h3 class="h5">Allergies and dietary needs</h3>
+                        <p>Gluten-free, dairy-free and vegan options are available. My kitchen handles nuts, gluten, dairy and eggs, so please mention any allergies when you order.</p>
+                    </div>
                 </div>
             </div>
         </section>

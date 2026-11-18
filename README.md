@@ -62,7 +62,7 @@ The website aims to:
 | **Home** (`index.html`) | Welcome section with photo and introduction; cards for the four main occasions (Birthdays, Weddings, Graduations, Baby Showers); "Order a cake" button | Visitors can see within seconds what the business offers and which occasions it caters for, with a clear next step if they want to order. |
 | **About** (`about.html`) | Jane's story, her experience and her approach to ingredients and baking; "Order a cake" button | Builds trust by putting a face and a story behind the business, showing customers they are buying from a skilled, caring baker. |
 | **Portfolio** (`portfolio.html`) | Gallery of 12 cake styles in a responsive grid (4 per row on desktop, 2 on tablet, 1 on mobile), each with a short description | Lets customers browse real examples of Jane's work, compare styles and get inspiration before they get in touch. |
-| **Contact** (`contact.html`) | Enquiry form (name, email, occasion, date needed, cake description); embedded Google Map; address and contact details; 48-hour response promise | Makes ordering simple: customers can send everything Jane needs in one go, see where she is based, and know when to expect a reply. On mobile the form appears first. |
+| **Contact** (`contact.html`) | Enquiry form (name, email, occasion, date needed, delivery or collection, cake description) that emails Jane via Formspree; embedded Google Map; address and contact details; 48-hour response promise; **Delivery & Collection** section covering collection, local delivery, wedding cake set-up, how far ahead to order, travelling with a cake, and allergies | Makes ordering simple: customers can send everything Jane needs in one go, see where she is based, and know when to expect a reply. The delivery section answers the practical "how do I get my cake?" questions before customers need to ask. On mobile the form appears first. |
 
 **Site-wide features:**
 
@@ -83,6 +83,7 @@ The website aims to:
 - CSS3 (`assets/css/style.css`)
 - [Bootstrap 5.3.3](https://getbootstrap.com/)
 - Google Maps embed
+- [Formspree](https://formspree.io/) (sends contact form enquiries by email)
 - Git and GitHub
 - GitHub Pages (hosting)
 - VS Code
@@ -272,12 +273,11 @@ The colours were taken from the Jane's Cakes logo to give the site a warm, frien
 
 | Update | Benefit |
 |--------|---------|
-| **Working contact form**, using a service such as [Formspree](https://formspree.io/) or EmailJS so enquiries are emailed to Jane | At the moment the form doesn't send anything. This would let customers place real enquiries. |
-| **Form confirmation message** shown after an enquiry is sent | Reassures customers that their message has arrived. |
+| **Custom confirmation message** on the site after an enquiry is sent, instead of Formspree's default thank-you page | Keeps customers on Jane's site and reassures them their message has arrived. |
+| **Delivery postcode checker** that shows the delivery price for a postcode | Customers can see straight away whether Jane delivers to them and how much it costs. |
 | **Customer reviews and testimonials** section on the home page | Builds trust with new customers through social proof. |
 | **Price guide** showing starting prices for each cake type and size | Helps customers check their budget before getting in touch. |
 | **Portfolio filters** (e.g. Birthdays, Weddings, Graduations) and a lightbox to view photos full size | Makes the growing portfolio easier to browse. |
 | **Online ordering and payment**, using a service such as Stripe | Customers could book and pay a deposit online. |
 | **Social media links** (Instagram, Facebook) in a site-wide footer | Instagram is popular for cake businesses, so visitors could see Jane's latest bakes. |
 | **Own photography** to replace the stock and AI-generated images | Shows Jane's real cakes and removes any copyright concerns. |
-| **FAQ page** covering delivery, allergies, dietary options and how far in advance to order | Answers common questions so customers don't have to ask. |
