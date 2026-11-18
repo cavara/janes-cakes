@@ -137,6 +137,7 @@ Full-page screenshots of every page, taken with Chrome DevTools. Click an image 
 | Logo displayed at full size and stretched the navbar | The `.logo` class had no CSS rule | Added `.logo { height: 50px; width: auto; }` to `style.css` | Fixed |
 | Contact page form, button and logo had no custom styling | `contact.html` did not link to `style.css`, and Bootstrap was linked twice | Added the `style.css` link after Bootstrap and removed the duplicate Bootstrap link | Fixed |
 | Mobile hamburger menu missing and stray text in the navbar | The opening `<button class="navbar-toggler"` line was deleted by accident while editing | Restored the missing line | Fixed |
+| W3C HTML validator: "h3 follows h1, skipping 1 heading level" | Sub-headings and card titles used `<h3>` directly under the page's `<h1>` | Changed them to `<h2>` and added Bootstrap's `h3` / `h5` classes so they look the same | Fixed |
 
 ---
 
