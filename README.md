@@ -103,16 +103,16 @@ Full-page screenshots of every page, taken with Chrome DevTools. Click an image 
 
 | Page | Result | Screenshot |
 |------|--------|------------|
-| Home | <!-- Pass / Fail --> | <!-- ![HTML - home](docs/testing/html-home.png) --> |
-| About | <!-- Pass / Fail --> | <!-- ![HTML - about](docs/testing/html-about.png) --> |
-| Portfolio | <!-- Pass / Fail --> | <!-- ![HTML - portfolio](docs/testing/html-portfolio.png) --> |
-| Contact | <!-- Pass / Fail --> | <!-- ![HTML - contact](docs/testing/html-contact.png) --> |
+| Home | ✅ Pass | <img src="docs/testing/html-home.png" alt="W3C HTML validation result for the home page" width="400"> |
+| About | ✅ Pass | <img src="docs/testing/html-about.png" alt="W3C HTML validation result for the about page" width="400"> |
+| Portfolio | ✅ Pass | <img src="docs/testing/html-portfolio.png" alt="W3C HTML validation result for the portfolio page" width="400"> |
+| Contact | ✅ Pass | <img src="docs/testing/html-contact.png" alt="W3C HTML validation result for the contact page" width="400"> |
 
 ### CSS Validation ([W3C Jigsaw](https://jigsaw.w3.org/css-validator/))
 
 | File | Result | Screenshot |
 |------|--------|------------|
-| `style.css` | <!-- Pass / Fail --> | <!-- ![CSS validation](docs/testing/css.png) --> |
+| `style.css` | ✅ Pass – no errors found (CSS level 3 + SVG) | <img src="docs/testing/css.png" alt="W3C CSS validation result showing no errors" width="400"> |
 
 ### Lighthouse Performance
 
@@ -138,6 +138,8 @@ Full-page screenshots of every page, taken with Chrome DevTools. Click an image 
 | Contact page form, button and logo had no custom styling | `contact.html` did not link to `style.css`, and Bootstrap was linked twice | Added the `style.css` link after Bootstrap and removed the duplicate Bootstrap link | Fixed |
 | Mobile hamburger menu missing and stray text in the navbar | The opening `<button class="navbar-toggler"` line was deleted by accident while editing | Restored the missing line | Fixed |
 | W3C HTML validator: "h3 follows h1, skipping 1 heading level" | Sub-headings and card titles used `<h3>` directly under the page's `<h1>` | Changed them to `<h2>` and added Bootstrap's `h3` / `h5` classes so they look the same | Fixed |
+| Lighthouse Performance score of 58 on the home page (mobile) | The main home page photo was a 3.9 MB, 1264×1264 PNG | Resized to 800×800 and converted to WebP (81 KB, about 98% smaller) | Fixed |
+| Lighthouse SEO and Best Practices points lost | Pages had no meta description, and the missing favicon caused a console error | Added a meta description to each page and linked the logo as the favicon | Fixed |
 
 ---
 
