@@ -204,7 +204,29 @@ The home page originally scored 58 for Performance. This was improved to 98 by c
 
 ## Declaration of AI Use
 
-<!-- TODO: State which AI tools were used, what for (e.g. README structure, debugging, content drafting), and what you wrote or checked yourself. -->
+I used **Claude** (Anthropic's AI assistant) during this project as a coding assistant and tutor. I built the original four pages myself, and I reviewed, tested and approved every change before committing it.
+
+**What AI was used for:**
+
+| Area | How AI helped |
+|------|---------------|
+| README | Creating the README structure from the bootcamp checklist, and drafting the website purpose, user stories, feature benefits and bugs sections, which I then reviewed and edited |
+| Validation | Explaining and fixing W3C HTML validator errors (spaces in image filenames, heading order, trailing slashes) |
+| Performance and accessibility | Identifying the oversized home page image, compressing it to WebP, adding lazy loading, meta descriptions and a favicon, and fixing a colour contrast issue flagged by Lighthouse |
+| Process | Explaining how to deploy with GitHub Pages, take full-page screenshots in Chrome DevTools, and run the HTML, CSS and Lighthouse tests |
+
+AI also suggested some styling and layout changes, which I reviewed and adapted.
+
+<!-- TODO: add any other AI tools you used, e.g. an image generator for photos, or AI help with the original page content or logo. Delete this comment if there are none. -->
+
+**What I did myself:**
+
+- Planned the site and wrote the original HTML pages and CSS
+- Chose the content, images and branding for Jane's Cakes
+- Ran all the validation and Lighthouse tests and took the screenshots
+- Checked every AI suggestion in the browser before keeping it, and made the final decisions about what went into the site
+
+**What I learned:** <!-- TODO: one or two sentences in your own words, e.g. "how Bootstrap's grid works, why heading order matters for screen readers, and how image size affects page speed." -->
 
 ---
 
