@@ -71,7 +71,8 @@ The website aims to:
 | Sticky navigation bar with logo, highlighted current page and "Order a cake" button | Visitors always know where they are and can move between pages or start an order from anywhere on the site. |
 | Responsive design (Bootstrap 5) with a collapsing hamburger menu on small screens | The site is easy to use on phones, tablets and desktops. |
 | Consistent brand colours and logo across every page, plus a logo favicon | A professional, recognisable look that matches Jane's brand and builds confidence. |
-| Footer call to action ("Got an idea for a cake...? Get in touch") | Gives visitors one more prompt to get in touch when they reach the end of a page. |
+| Site-wide footer with Jane's address, email, phone, social media links and copyright | Contact details are always one scroll away, and the footer gives every page a finished, professional look. |
+| "Get in touch" call to action above the footer (Home, About and Portfolio pages) | Gives visitors one more prompt to get in touch when they reach the end of a page. Left off the contact page, where it would only link back to the same page. |
 | Accessibility: descriptive alt text, logical heading order, colour contrast that meets WCAG AA | The site can be used by people with screen readers or visual impairments (Lighthouse Accessibility score of 100 on every page). |
 | Optimised images with lazy loading | Pages load quickly, even on mobile data (Lighthouse Performance 96–99). |
 
@@ -280,5 +281,5 @@ The colours were taken from the Jane's Cakes logo to give the site a warm, frien
 | **Price guide** showing starting prices for each cake type and size | Helps customers check their budget before getting in touch. |
 | **Portfolio filters** (e.g. Birthdays, Weddings, Graduations) and a lightbox to view photos full size | Makes the growing portfolio easier to browse. |
 | **Online ordering and payment**, using a service such as Stripe | Customers could book and pay a deposit online. |
-| **Social media links** (Instagram, Facebook) in a site-wide footer | Instagram is popular for cake businesses, so visitors could see Jane's latest bakes. |
+| **Instagram feed** embedded on the home page | Instagram is popular for cake businesses, so visitors could see Jane's latest bakes. |
 | **Own photography** to replace the stock and AI-generated images | Shows Jane's real cakes and removes any copyright concerns. |

@@ -133,3 +133,62 @@ h3 {
 .info-card p {
   margin-bottom: 0;
 }
+
+/* ---------- Links ---------- */
+/* Brand-coloured links instead of Bootstrap's default blue */
+main a:not(.btn),
+.cta-text a {
+  color: #8a2f52;
+}
+
+main a:not(.btn):hover,
+.cta-text a:hover {
+  color: #b5566e;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background-color: #fdf2f4;
+  border-top: 3px solid #d98a9c;
+  color: #4a3a3f;
+  padding: 2.5rem 0 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer-brand {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #8a2f52;
+  margin-bottom: 0.5rem;
+}
+
+.footer-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #8a2f52;
+  margin-bottom: 0.75rem;
+}
+
+.site-footer address {
+  font-style: normal;
+}
+
+.site-footer a {
+  color: #8a2f52;
+}
+
+.site-footer a:hover {
+  color: #5e1f37; /* darker berry keeps strong contrast on the pale pink */
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.875rem;
+  border-top: 1px solid #ecd3da;
+  padding-top: 1rem;
+  margin: 2rem 0 0;
+}
