@@ -11,11 +11,12 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous">
-      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
       <link rel="icon" href="assets/images/Janes_Cakes_Logo.svg" type="image/svg+xml">
   </head>
 
-  <body>
+  <body id="top">
    <nav class="navbar navbar-expand-sm sticky-top">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -57,7 +58,7 @@
 
 
     <!-- main content -->
-    <main>
+    <main class="fade-in">
       <!-- About section links to #about href in navbar -->
 
       <!-- portfolio section starts here -->
@@ -69,17 +70,17 @@
   </div>
 
   <!-- new row for image + text -->
-  <div class="row">
+  <div class="row align-items-center">
     <!-- image column (left) -->
     <div class="col-12 col-md-6 mb-4">
       <img
         src="assets/images/Jane.jpg"
-        class="img-fluid"
+        class="img-fluid hero-img"
         alt="Jane holding a layered cake in her kitchen">
     </div>
 
     <!-- text column (right) -->
-    <div class="col-12 col-md-6 mb-4 align-self-center">
+    <div class="col-12 col-md-6 mb-4">
       <h2 class="h3 mb-3">Hi, I'm Jane!</h2>
       <p>  I've been baking for over ten years, and nothing makes me happier than
               seeing someone's face light up when their cake arrives. What started as
@@ -94,10 +95,68 @@
       <p> Whether it's a birthday, wedding, baby shower or just because, I'd love
               to create something special for you. Every design is made to match your
               style, your colours and your celebration.</p>
-      <a href="contact.html" class="btn btn-outline-secondary mt-2">Order a cake</a>
+      <a href="contact.html" class="btn btn-cake px-4 mt-2">Order a cake</a>
     </div>
   </div> <!-- close the new row -->
-</section>       
+</section>
+
+      <!-- Timeline of Jane's baking journey -->
+      <section id="timeline" class="container pb-5">
+        <div class="text-center my-4">
+          <h2 class="display-5">My baking journey</h2>
+          <p>From a wobbly first birthday cake to a business of my own.</p>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"><i class="bi bi-cake2"></i></span>
+            <div class="timeline-content">
+              <span class="timeline-year">2014</span>
+              <h3 class="h5">My first proper cake</h3>
+              <p>A three-layer rainbow cake for my niece's 5th birthday. It leaned a little, but her face when she saw it got me hooked.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"><i class="bi bi-people"></i></span>
+            <div class="timeline-content">
+              <span class="timeline-year">2016</span>
+              <h3 class="h5">Baking for friends and family</h3>
+              <p>Word spread quickly, and I was soon baking birthday and christening cakes for friends, family and neighbours most weekends.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"><i class="bi bi-award"></i></span>
+            <div class="timeline-content">
+              <span class="timeline-year">2019</span>
+              <h3 class="h5">Qualified and registered</h3>
+              <p>I completed my Level 2 Food Hygiene certificate and registered my home kitchen with the local council.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"><i class="bi bi-shop"></i></span>
+            <div class="timeline-content">
+              <span class="timeline-year">2021</span>
+              <h3 class="h5">Jane's Cakes is born</h3>
+              <p>I officially launched Jane's Cakes in Horley, taking orders from customers across Surrey.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"><i class="bi bi-heart"></i></span>
+            <div class="timeline-content">
+              <span class="timeline-year">2023</span>
+              <h3 class="h5">My first wedding cake</h3>
+              <p>A three-tier floral wedding cake for a couple in Reigate. Weddings are now one of my favourite things to bake.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"><i class="bi bi-laptop"></i></span>
+            <div class="timeline-content">
+              <span class="timeline-year">2026</span>
+              <h3 class="h5">Jane's Cakes goes online</h3>
+              <p>This website launched, making it easier than ever to browse my cakes and place an order.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
     </main>
 
     <!-- Call to action (not shown on the contact page) -->
@@ -107,6 +166,9 @@
         <a href="contact.html">Get in touch</a> and let's make it happen.
       </p>
     </aside>
+
+    <!-- Back to top button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up" aria-hidden="true"></i></a>
 
     <!-- Site footer (same on every page) -->
     <footer class="site-footer">
@@ -120,21 +182,22 @@
             <h2 class="footer-heading">Contact</h2>
             <!-- TODO: replace with real email and phone number, or remove -->
             <address class="mb-0">
-              32 Hamilton Close, Horley, Surrey, RH10 0NU<br>
-              <a href="mailto:hello@janescakes.co.uk">hello@janescakes.co.uk</a><br>
-              <a href="tel:+441234567890">01234 567890</a>
+              <i class="bi bi-geo-alt me-1" aria-hidden="true"></i>32 Hamilton Close, Horley, Surrey, RH10 0NU<br>
+              <i class="bi bi-envelope me-1" aria-hidden="true"></i><a href="mailto:hello@janescakes.co.uk">hello@janescakes.co.uk</a><br>
+              <i class="bi bi-telephone me-1" aria-hidden="true"></i><a href="tel:+441234567890">01234 567890</a>
             </address>
           </div>
           <div class="col">
             <h2 class="footer-heading">Follow us</h2>
             <!-- TODO: replace with Jane's real social media pages -->
             <ul class="list-unstyled mb-0">
-              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram (opens in a new tab)">Instagram</a></li>
-              <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook (opens in a new tab)">Facebook</a></li>
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram (opens in a new tab)"><i class="bi bi-instagram me-1" aria-hidden="true"></i>Instagram</a></li>
+              <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook (opens in a new tab)"><i class="bi bi-facebook me-1" aria-hidden="true"></i>Facebook</a></li>
             </ul>
           </div>
         </div>
-        <p class="footer-copy">&copy; 2026 Jane's Cakes. All rights reserved.</p>
+        <p class="footer-copy">&copy; 2026 Jane's Cakes. All rights reserved.<br>
+          <span class="small">Jane's Cakes is a fictional business created for a coding bootcamp project.</span></p>
       </div>
     </footer>
 

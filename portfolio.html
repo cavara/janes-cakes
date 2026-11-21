@@ -11,11 +11,12 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
       <link rel="icon" href="assets/images/Janes_Cakes_Logo.svg" type="image/svg+xml">
   </head>
 
-  <body>
+  <body id="top">
     <nav class="navbar navbar-expand-sm sticky-top">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -56,7 +57,7 @@
     </nav>
 
     <!-- main content -->
-    <main>
+    <main class="fade-in">
       <!-- portfolio section starts here -->
       <section id="portfolio" class="container pb-4">
         <!-- my-4 used to add top and bottom margin to heading -->
@@ -75,198 +76,454 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
           <!-- Card 1 -->
           <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/sponge.jpg"
-                class="card-img-top portfolio-img"
-                alt="A light sponge cake">
-              <div class="card-body">
+            <div class="card h-100 portfolio-card">
+              <button type="button" class="portfolio-zoom" data-bs-toggle="modal" data-bs-target="#cakeModal1" aria-label="View a larger photo of Sponge Cakes">
+                <img
+                  src="assets/images/sponge.jpg"
+                  class="card-img-top portfolio-img"
+                  alt="A light sponge cake">
+                <span class="portfolio-overlay" aria-hidden="true"><i class="bi bi-zoom-in me-1"></i>View larger</span>
+              </button>
+              <div class="card-body d-flex flex-column">
                 <h2 class="card-title h5">Sponge Cakes</h2>
                 <p class="card-text">
                   This style of cake is made using our unique blend of syrup and icing.
                 </p>
+                <a href="contact.html" class="btn btn-cake btn-sm mt-auto align-self-start">Enquire</a>
               </div>
             </div>
           </div>
 
           <!-- Card 2 -->
           <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/chocolate.jpg"
-                class="card-img-top portfolio-img"
-                alt="A rich chocolate cake">
-              <div class="card-body">
+            <div class="card h-100 portfolio-card">
+              <button type="button" class="portfolio-zoom" data-bs-toggle="modal" data-bs-target="#cakeModal2" aria-label="View a larger photo of Chocolate Cakes">
+                <img
+                  src="assets/images/chocolate.jpg"
+                  class="card-img-top portfolio-img"
+                  alt="A rich chocolate cake">
+                <span class="portfolio-overlay" aria-hidden="true"><i class="bi bi-zoom-in me-1"></i>View larger</span>
+              </button>
+              <div class="card-body d-flex flex-column">
                 <h2 class="card-title h5">Chocolate Cakes</h2>
                 <p class="card-text">
                   We use the finest Belgian chocolate to make our award-winning chocolate cakes.
                 </p>
+                <a href="contact.html" class="btn btn-cake btn-sm mt-auto align-self-start">Enquire</a>
               </div>
             </div>
           </div>
 
           <!-- Card 3 -->
           <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/carrot-cake-beauty-4.webp"
-                class="card-img-top portfolio-img"
-                alt="A carrot cake with cream cheese frosting">
-              <div class="card-body">
+            <div class="card h-100 portfolio-card">
+              <button type="button" class="portfolio-zoom" data-bs-toggle="modal" data-bs-target="#cakeModal3" aria-label="View a larger photo of Carrot Cakes">
+                <img
+                  src="assets/images/carrot-cake-beauty-4.webp"
+                  class="card-img-top portfolio-img"
+                  alt="A carrot cake with cream cheese frosting">
+                <span class="portfolio-overlay" aria-hidden="true"><i class="bi bi-zoom-in me-1"></i>View larger</span>
+              </button>
+              <div class="card-body d-flex flex-column">
                 <h2 class="card-title h5">Carrot Cakes</h2>
                 <p class="card-text">
                   Our award-winning carrot cakes are truly divine and made with organic carrots sourced from local farms.
                 </p>
+                <a href="contact.html" class="btn btn-cake btn-sm mt-auto align-self-start">Enquire</a>
               </div>
             </div>
           </div>
 
           <!-- Card 4 -->
           <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/frosted.jpg"
-                class="card-img-top portfolio-img"
-                alt="A cake covered in smooth frosting">
-              <div class="card-body">
+            <div class="card h-100 portfolio-card">
+              <button type="button" class="portfolio-zoom" data-bs-toggle="modal" data-bs-target="#cakeModal4" aria-label="View a larger photo of Frosted">
+                <img
+                  src="assets/images/frosted.jpg"
+                  class="card-img-top portfolio-img"
+                  alt="A cake covered in smooth frosting">
+                <span class="portfolio-overlay" aria-hidden="true"><i class="bi bi-zoom-in me-1"></i>View larger</span>
+              </button>
+              <div class="card-body d-flex flex-column">
                 <h2 class="card-title h5">Frosted</h2>
                 <p class="card-text">
                   We use a proprietary fondant icing technique which fuses citrus elements into the finest royal icing money can buy.
                 </p>
+                <a href="contact.html" class="btn btn-cake btn-sm mt-auto align-self-start">Enquire</a>
               </div>
             </div>
           </div>
 
           <!-- Card 5 -->
           <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/macaron-drip-cake.jpg"
-                class="card-img-top portfolio-img" loading="lazy"
-                alt="A pink drip cake topped with macarons and meringues">
-              <div class="card-body">
+            <div class="card h-100 portfolio-card">
+              <button type="button" class="portfolio-zoom" data-bs-toggle="modal" data-bs-target="#cakeModal5" aria-label="View a larger photo of Macaron Drip Cakes">
+                <img
+                  src="assets/images/macaron-drip-cake.jpg"
+                  class="card-img-top portfolio-img" loading="lazy"
+                  alt="A pink drip cake topped with macarons and meringues">
+                <span class="portfolio-overlay" aria-hidden="true"><i class="bi bi-zoom-in me-1"></i>View larger</span>
+              </button>
+              <div class="card-body d-flex flex-column">
                 <h2 class="card-title h5">Macaron Drip Cakes</h2>
                 <p class="card-text">
                   A pink vanilla sponge with a raspberry drip, crowned with handmade macarons and meringue kisses.
                 </p>
+                <a href="contact.html" class="btn btn-cake btn-sm mt-auto align-self-start">Enquire</a>
               </div>
             </div>
           </div>
 
           <!-- Card 6 -->
           <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/funfetti-cake.jpg"
-                class="card-img-top portfolio-img" loading="lazy"
-                alt="A slice of layered funfetti cake covered in sprinkles">
-              <div class="card-body">
+            <div class="card h-100 portfolio-card">
+              <button type="button" class="portfolio-zoom" data-bs-toggle="modal" data-bs-target="#cakeModal6" aria-label="View a larger photo of Funfetti Cakes">
+                <img
+                  src="assets/images/funfetti-cake.jpg"
+                  class="card-img-top portfolio-img" loading="lazy"
+                  alt="A slice of layered funfetti cake covered in sprinkles">
+                <span class="portfolio-overlay" aria-hidden="true"><i class="bi bi-zoom-in me-1"></i>View larger</span>
+              </button>
+              <div class="card-body d-flex flex-column">
                 <h2 class="card-title h5">Funfetti Cakes</h2>
                 <p class="card-text">
                   Light vanilla layers packed with colourful sprinkles, a favourite for children's birthdays.
                 </p>
+                <a href="contact.html" class="btn btn-cake btn-sm mt-auto align-self-start">Enquire</a>
               </div>
             </div>
           </div>
 
           <!-- Card 7 -->
           <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/floral-wedding-cake.jpg"
-                class="card-img-top portfolio-img" loading="lazy"
-                alt="A white two-tier wedding cake decorated with fresh flowers">
-              <div class="card-body">
+            <div class="card h-100 portfolio-card">
+              <button type="button" class="portfolio-zoom" data-bs-toggle="modal" data-bs-target="#cakeModal7" aria-label="View a larger photo of Wedding Cakes">
+                <img
+                  src="assets/images/floral-wedding-cake.jpg"
+                  class="card-img-top portfolio-img" loading="lazy"
+                  alt="A white two-tier wedding cake decorated with fresh flowers">
+                <span class="portfolio-overlay" aria-hidden="true"><i class="bi bi-zoom-in me-1"></i>View larger</span>
+              </button>
+              <div class="card-body d-flex flex-column">
                 <h2 class="card-title h5">Wedding Cakes</h2>
                 <p class="card-text">
                   Elegant tiered cakes finished with fresh flowers and designed around your big day.
                 </p>
+                <a href="contact.html" class="btn btn-cake btn-sm mt-auto align-self-start">Enquire</a>
               </div>
             </div>
           </div>
 
           <!-- Card 8 -->
           <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/red-velvet-cake.jpg"
-                class="card-img-top portfolio-img" loading="lazy"
-                alt="A red velvet cake topped with strawberries">
-              <div class="card-body">
+            <div class="card h-100 portfolio-card">
+              <button type="button" class="portfolio-zoom" data-bs-toggle="modal" data-bs-target="#cakeModal8" aria-label="View a larger photo of Red Velvet Cakes">
+                <img
+                  src="assets/images/red-velvet-cake.jpg"
+                  class="card-img-top portfolio-img" loading="lazy"
+                  alt="A red velvet cake topped with strawberries">
+                <span class="portfolio-overlay" aria-hidden="true"><i class="bi bi-zoom-in me-1"></i>View larger</span>
+              </button>
+              <div class="card-body d-flex flex-column">
                 <h2 class="card-title h5">Red Velvet Cakes</h2>
                 <p class="card-text">
                   Moist red velvet sponge with cream cheese filling, topped with fresh and chocolate-dipped strawberries.
                 </p>
+                <a href="contact.html" class="btn btn-cake btn-sm mt-auto align-self-start">Enquire</a>
               </div>
             </div>
           </div>
 
           <!-- Card 9 -->
           <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/floral-drip-cake.jpg"
-                class="card-img-top portfolio-img" loading="lazy"
-                alt="A pink celebration cake decorated with flowers and doughnuts">
-              <div class="card-body">
+            <div class="card h-100 portfolio-card">
+              <button type="button" class="portfolio-zoom" data-bs-toggle="modal" data-bs-target="#cakeModal9" aria-label="View a larger photo of Celebration Cakes">
+                <img
+                  src="assets/images/floral-drip-cake.jpg"
+                  class="card-img-top portfolio-img" loading="lazy"
+                  alt="A pink celebration cake decorated with flowers and doughnuts">
+                <span class="portfolio-overlay" aria-hidden="true"><i class="bi bi-zoom-in me-1"></i>View larger</span>
+              </button>
+              <div class="card-body d-flex flex-column">
                 <h2 class="card-title h5">Celebration Cakes</h2>
                 <p class="card-text">
                   Show-stopping centrepieces with chocolate drips, sugar flowers and sweet treats on top.
                 </p>
+                <a href="contact.html" class="btn btn-cake btn-sm mt-auto align-self-start">Enquire</a>
               </div>
             </div>
           </div>
 
           <!-- Card 10 -->
           <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/chocolate-orange-cake.webp"
-                class="card-img-top portfolio-img" loading="lazy"
-                alt="An orange and chocolate layer cake">
-              <div class="card-body">
+            <div class="card h-100 portfolio-card">
+              <button type="button" class="portfolio-zoom" data-bs-toggle="modal" data-bs-target="#cakeModal10" aria-label="View a larger photo of Chocolate Orange Cakes">
+                <img
+                  src="assets/images/chocolate-orange-cake.webp"
+                  class="card-img-top portfolio-img" loading="lazy"
+                  alt="An orange and chocolate layer cake">
+                <span class="portfolio-overlay" aria-hidden="true"><i class="bi bi-zoom-in me-1"></i>View larger</span>
+              </button>
+              <div class="card-body d-flex flex-column">
                 <h2 class="card-title h5">Chocolate Orange Cakes</h2>
                 <p class="card-text">
                   Zesty orange sponge layered with chocolate ganache and finished with a glossy chocolate drip.
                 </p>
+                <a href="contact.html" class="btn btn-cake btn-sm mt-auto align-self-start">Enquire</a>
               </div>
             </div>
           </div>
 
           <!-- Card 11 -->
           <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/raspberry-layer-cake.webp"
-                class="card-img-top portfolio-img" loading="lazy"
-                alt="A layered sponge cake with cream and fresh raspberries">
-              <div class="card-body">
+            <div class="card h-100 portfolio-card">
+              <button type="button" class="portfolio-zoom" data-bs-toggle="modal" data-bs-target="#cakeModal11" aria-label="View a larger photo of Raspberry Layer Cakes">
+                <img
+                  src="assets/images/raspberry-layer-cake.webp"
+                  class="card-img-top portfolio-img" loading="lazy"
+                  alt="A layered sponge cake with cream and fresh raspberries">
+                <span class="portfolio-overlay" aria-hidden="true"><i class="bi bi-zoom-in me-1"></i>View larger</span>
+              </button>
+              <div class="card-body d-flex flex-column">
                 <h2 class="card-title h5">Raspberry Layer Cakes</h2>
                 <p class="card-text">
                   Three layers of vanilla sponge filled with whipped cream and topped with fresh raspberries.
                 </p>
+                <a href="contact.html" class="btn btn-cake btn-sm mt-auto align-self-start">Enquire</a>
               </div>
             </div>
           </div>
 
           <!-- Card 12 - TODO: replace this image with a new cake photo -->
           <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/frosted.jpg"
-                class="card-img-top portfolio-img" loading="lazy"
-                alt="A cake decorated for a special occasion">
-              <div class="card-body">
+            <div class="card h-100 portfolio-card">
+              <button type="button" class="portfolio-zoom" data-bs-toggle="modal" data-bs-target="#cakeModal12" aria-label="View a larger photo of Custom Cakes">
+                <img
+                  src="assets/images/frosted.jpg"
+                  class="card-img-top portfolio-img" loading="lazy"
+                  alt="A cake decorated for a special occasion">
+                <span class="portfolio-overlay" aria-hidden="true"><i class="bi bi-zoom-in me-1"></i>View larger</span>
+              </button>
+              <div class="card-body d-flex flex-column">
                 <h2 class="card-title h5">Custom Cakes</h2>
                 <p class="card-text">
                   Have something special in mind? We design one-off cakes to match any theme or occasion.
                 </p>
+                <a href="contact.html" class="btn btn-cake btn-sm mt-auto align-self-start">Enquire</a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
     </main>
+
+      <!-- Enlarged photo pop-ups (Bootstrap modals), one per cake -->
+      <div class="modal fade" id="cakeModal1" tabindex="-1" aria-labelledby="cakeModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5" id="cakeModal1Label">Sponge Cakes</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/images/sponge.jpg" class="modal-cake-img" loading="lazy" alt="A light sponge cake">
+              <p class="mt-3 mb-0">This style of cake is made using our unique blend of syrup and icing.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="contact.html" class="btn btn-cake">Enquire about this cake</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cakeModal2" tabindex="-1" aria-labelledby="cakeModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5" id="cakeModal2Label">Chocolate Cakes</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/images/chocolate.jpg" class="modal-cake-img" loading="lazy" alt="A rich chocolate cake">
+              <p class="mt-3 mb-0">We use the finest Belgian chocolate to make our award-winning chocolate cakes.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="contact.html" class="btn btn-cake">Enquire about this cake</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cakeModal3" tabindex="-1" aria-labelledby="cakeModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5" id="cakeModal3Label">Carrot Cakes</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/images/carrot-cake-beauty-4.webp" class="modal-cake-img" loading="lazy" alt="A carrot cake with cream cheese frosting">
+              <p class="mt-3 mb-0">Our award-winning carrot cakes are truly divine and made with organic carrots sourced from local farms.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="contact.html" class="btn btn-cake">Enquire about this cake</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cakeModal4" tabindex="-1" aria-labelledby="cakeModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5" id="cakeModal4Label">Frosted</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/images/frosted.jpg" class="modal-cake-img" loading="lazy" alt="A cake covered in smooth frosting">
+              <p class="mt-3 mb-0">We use a proprietary fondant icing technique which fuses citrus elements into the finest royal icing money can buy.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="contact.html" class="btn btn-cake">Enquire about this cake</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cakeModal5" tabindex="-1" aria-labelledby="cakeModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5" id="cakeModal5Label">Macaron Drip Cakes</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/images/macaron-drip-cake.jpg" class="modal-cake-img" loading="lazy" alt="A pink drip cake topped with macarons and meringues">
+              <p class="mt-3 mb-0">A pink vanilla sponge with a raspberry drip, crowned with handmade macarons and meringue kisses.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="contact.html" class="btn btn-cake">Enquire about this cake</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cakeModal6" tabindex="-1" aria-labelledby="cakeModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5" id="cakeModal6Label">Funfetti Cakes</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/images/funfetti-cake.jpg" class="modal-cake-img" loading="lazy" alt="A slice of layered funfetti cake covered in sprinkles">
+              <p class="mt-3 mb-0">Light vanilla layers packed with colourful sprinkles, a favourite for children's birthdays.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="contact.html" class="btn btn-cake">Enquire about this cake</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cakeModal7" tabindex="-1" aria-labelledby="cakeModal7Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5" id="cakeModal7Label">Wedding Cakes</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/images/floral-wedding-cake.jpg" class="modal-cake-img" loading="lazy" alt="A white two-tier wedding cake decorated with fresh flowers">
+              <p class="mt-3 mb-0">Elegant tiered cakes finished with fresh flowers and designed around your big day.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="contact.html" class="btn btn-cake">Enquire about this cake</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cakeModal8" tabindex="-1" aria-labelledby="cakeModal8Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5" id="cakeModal8Label">Red Velvet Cakes</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/images/red-velvet-cake.jpg" class="modal-cake-img" loading="lazy" alt="A red velvet cake topped with strawberries">
+              <p class="mt-3 mb-0">Moist red velvet sponge with cream cheese filling, topped with fresh and chocolate-dipped strawberries.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="contact.html" class="btn btn-cake">Enquire about this cake</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cakeModal9" tabindex="-1" aria-labelledby="cakeModal9Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5" id="cakeModal9Label">Celebration Cakes</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/images/floral-drip-cake.jpg" class="modal-cake-img" loading="lazy" alt="A pink celebration cake decorated with flowers and doughnuts">
+              <p class="mt-3 mb-0">Show-stopping centrepieces with chocolate drips, sugar flowers and sweet treats on top.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="contact.html" class="btn btn-cake">Enquire about this cake</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cakeModal10" tabindex="-1" aria-labelledby="cakeModal10Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5" id="cakeModal10Label">Chocolate Orange Cakes</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/images/chocolate-orange-cake.webp" class="modal-cake-img" loading="lazy" alt="An orange and chocolate layer cake">
+              <p class="mt-3 mb-0">Zesty orange sponge layered with chocolate ganache and finished with a glossy chocolate drip.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="contact.html" class="btn btn-cake">Enquire about this cake</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cakeModal11" tabindex="-1" aria-labelledby="cakeModal11Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5" id="cakeModal11Label">Raspberry Layer Cakes</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/images/raspberry-layer-cake.webp" class="modal-cake-img" loading="lazy" alt="A layered sponge cake with cream and fresh raspberries">
+              <p class="mt-3 mb-0">Three layers of vanilla sponge filled with whipped cream and topped with fresh raspberries.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="contact.html" class="btn btn-cake">Enquire about this cake</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cakeModal12" tabindex="-1" aria-labelledby="cakeModal12Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5" id="cakeModal12Label">Custom Cakes</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/images/frosted.jpg" class="modal-cake-img" loading="lazy" alt="A cake decorated for a special occasion">
+              <p class="mt-3 mb-0">Have something special in mind? We design one-off cakes to match any theme or occasion.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="contact.html" class="btn btn-cake">Enquire about this cake</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     <!-- Call to action (not shown on the contact page) -->
     <aside class="container text-center my-4">
@@ -275,6 +532,9 @@
         <a href="contact.html">Get in touch</a> and let's make it happen.
       </p>
     </aside>
+
+    <!-- Back to top button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up" aria-hidden="true"></i></a>
 
     <!-- Site footer (same on every page) -->
     <footer class="site-footer">
@@ -288,21 +548,22 @@
             <h2 class="footer-heading">Contact</h2>
             <!-- TODO: replace with real email and phone number, or remove -->
             <address class="mb-0">
-              32 Hamilton Close, Horley, Surrey, RH10 0NU<br>
-              <a href="mailto:hello@janescakes.co.uk">hello@janescakes.co.uk</a><br>
-              <a href="tel:+441234567890">01234 567890</a>
+              <i class="bi bi-geo-alt me-1" aria-hidden="true"></i>32 Hamilton Close, Horley, Surrey, RH10 0NU<br>
+              <i class="bi bi-envelope me-1" aria-hidden="true"></i><a href="mailto:hello@janescakes.co.uk">hello@janescakes.co.uk</a><br>
+              <i class="bi bi-telephone me-1" aria-hidden="true"></i><a href="tel:+441234567890">01234 567890</a>
             </address>
           </div>
           <div class="col">
             <h2 class="footer-heading">Follow us</h2>
             <!-- TODO: replace with Jane's real social media pages -->
             <ul class="list-unstyled mb-0">
-              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram (opens in a new tab)">Instagram</a></li>
-              <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook (opens in a new tab)">Facebook</a></li>
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram (opens in a new tab)"><i class="bi bi-instagram me-1" aria-hidden="true"></i>Instagram</a></li>
+              <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook (opens in a new tab)"><i class="bi bi-facebook me-1" aria-hidden="true"></i>Facebook</a></li>
             </ul>
           </div>
         </div>
-        <p class="footer-copy">&copy; 2026 Jane's Cakes. All rights reserved.</p>
+        <p class="footer-copy">&copy; 2026 Jane's Cakes. All rights reserved.<br>
+          <span class="small">Jane's Cakes is a fictional business created for a coding bootcamp project.</span></p>
       </div>
     </footer>
 

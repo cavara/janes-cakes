@@ -11,11 +11,12 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
       <link rel="icon" href="assets/images/Janes_Cakes_Logo.svg" type="image/svg+xml">
   </head>
 
-  <body>
+  <body id="top">
     <nav class="navbar navbar-expand-sm sticky-top">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -56,10 +57,10 @@
     </nav>
 
     <!-- main content -->
-    <main>
+    <main class="fade-in">
       <!-- About section links to #about href in navbar -->
       <section id="about" class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <!-- my-4 used to add top and bottom margin to heading -->
           <div class="col-12 text-center my-4">
             <h1 class="display-5">Welcome</h1>
@@ -73,13 +74,13 @@
               width="800"
               height="800"
               fetchpriority="high"
-              class="img-fluid"
+              class="img-fluid hero-img hero-img-wide"
               alt="Three friends laughing as they bake and decorate cakes together">
           </div>
 
           <!-- text column (right) -->
-          <div class="col-12 col-md-6 mb-4 align-self-center">
-            <h2 class="h3 mb-3">Welcome to Jane's Cakes</h2>
+          <div class="col-12 col-md-6 mb-4">
+            <h2 class="h3 mb-3">Handmade cakes for every celebration</h2>
             <p>
               Over the last 5 years, we have helped residents of Surrey to have memorable experiences using our unique cake recipes.
             </p>
@@ -91,7 +92,7 @@
               to create something special for you. Every design is made to match your
               style, your colours and your celebration.
             </p>
-            <a href="contact.html" class="btn btn-outline-secondary mt-2">Order a cake</a>
+            <a href="contact.html" class="btn btn-cake px-4 mt-2">Order a cake</a>
           </div>
         </div>
       </section>
@@ -106,11 +107,11 @@
 
           <!-- cols for cards: mb-3 on the column, h-100 on the card keeps cards equal height -->
           <div class="col-12 col-md-6 mb-3">
-            <div class="card h-100">
+            <div class="card h-100 zoom-card">
               <img
-                src="assets/images/floral-drip-cake.jpg"
+                src="assets/images/funfetti-cake.jpg"
                 class="card-img-top" loading="lazy"
-                alt="A selection of colourful iced sweet treats">
+                alt="A slice of layered funfetti birthday cake covered in sprinkles">
               <div class="card-body">
                 <h3 class="card-title">Birthdays</h3>
                 <p class="card-text">
@@ -122,11 +123,11 @@
           </div>
 
           <div class="col-12 col-md-6 mb-3">
-            <div class="card h-100">
+            <div class="card h-100 zoom-card">
               <img
-                src="assets/images/funfetti-cake.jpg"
+                src="assets/images/floral-wedding-cake.jpg"
                 class="card-img-top" loading="lazy"
-                alt="A beautifully decorated layered celebration cake">
+                alt="A white two-tier wedding cake decorated with fresh flowers">
               <div class="card-body">
                 <h3 class="card-title">Weddings</h3>
                 <p class="card-text">
@@ -138,11 +139,11 @@
           </div>
 
           <div class="col-12 col-md-6 mb-3">
-            <div class="card h-100">
+            <div class="card h-100 zoom-card">
               <img
-                src="assets/images/floral-wedding-cake.jpg"
+                src="assets/images/floral-drip-cake.jpg"
                 class="card-img-top" loading="lazy"
-                alt="A surprise cake filled with sweets inside">
+                alt="A pink celebration cake topped with flowers and doughnuts">
               <div class="card-body">
                 <h3 class="card-title">Graduations</h3>
                 <p class="card-text">
@@ -154,11 +155,11 @@
           </div>
 
           <div class="col-12 col-md-6 mb-3">
-            <div class="card h-100">
+            <div class="card h-100 zoom-card">
               <img
-                src="assets/images/red-velvet-cake.jpg"
+                src="assets/images/macaron-drip-cake.jpg"
                 class="card-img-top" loading="lazy"
-                alt="A rich red velvet cake with cream cheese frosting">
+                alt="A pink drip cake topped with macarons and meringues">
               <div class="card-body">
                 <h3 class="card-title">Baby Showers</h3>
                 <p class="card-text">
@@ -170,6 +171,113 @@
           </div>
         </div>
       </section>
+
+      <!-- How to order: three simple steps -->
+      <section id="how-to-order" class="container pb-4">
+        <div class="text-center my-4">
+          <h2 class="display-5">How to order</h2>
+          <p>Getting your perfect cake is as easy as one, two, three.</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="step-card h-100">
+              <span class="step-number" aria-hidden="true">1</span>
+              <i class="bi bi-envelope-heart step-icon" aria-hidden="true"></i>
+              <h3 class="h5">Send an enquiry</h3>
+              <p>Tell me about your occasion, the date and the cake you have in mind using the contact form.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="step-card h-100">
+              <span class="step-number" aria-hidden="true">2</span>
+              <i class="bi bi-palette step-icon" aria-hidden="true"></i>
+              <h3 class="h5">Agree your design</h3>
+              <p>We'll chat through flavours, colours and decorations, and I'll send you a quote within 48 hours.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="step-card h-100">
+              <span class="step-number" aria-hidden="true">3</span>
+              <i class="bi bi-truck step-icon" aria-hidden="true"></i>
+              <h3 class="h5">Collect or delivery</h3>
+              <p>Pick up your cake from Horley, or have it delivered locally, ready for your celebration.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="contact.html" class="btn btn-cake px-4">Start your order</a>
+        </div>
+      </section>
+
+      <!-- Customer reviews carousel -->
+      <section id="reviews" class="container pb-5">
+        <div class="text-center my-4">
+          <h2 class="display-5">What customers say</h2>
+        </div>
+        <div id="reviewsCarousel" class="carousel carousel-dark slide reviews-carousel" data-bs-ride="carousel" data-bs-interval="6000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Review 1"></button>
+            <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1" aria-label="Review 2"></button>
+            <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="2" aria-label="Review 3"></button>
+            <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="3" aria-label="Review 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <figure class="review-card">
+                <div class="review-stars" role="img" aria-label="5 out of 5 stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <blockquote class="blockquote">
+                  <p>The funfetti cake for my daughter's 7th birthday was a total hit. It looked amazing and tasted even better, and there wasn't a crumb left!</p>
+                </blockquote>
+                <figcaption class="review-author">Sarah, Crawley &middot; Birthday cake</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure class="review-card">
+                <div class="review-stars" role="img" aria-label="5 out of 5 stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <blockquote class="blockquote">
+                  <p>Jane delivered and set up our two-tier wedding cake at the venue. It matched our flowers perfectly and so many guests asked who made it.</p>
+                </blockquote>
+                <figcaption class="review-author">Tom &amp; Priya, Reigate &middot; Wedding cake</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure class="review-card">
+                <div class="review-stars" role="img" aria-label="5 out of 5 stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <blockquote class="blockquote">
+                  <p>Beautiful pink drip cake for my baby shower. Jane was so easy to talk to and made a gluten-free version without anyone noticing the difference.</p>
+                </blockquote>
+                <figcaption class="review-author">Lucy, Horley &middot; Baby shower cake</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure class="review-card">
+                <div class="review-stars" role="img" aria-label="4 out of 5 stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                </div>
+                <blockquote class="blockquote">
+                  <p>Ordered a red velvet cake for my son's graduation at short notice. Jane fitted us in and it was delicious. Would definitely order again.</p>
+                </blockquote>
+                <figcaption class="review-author">Mark, Redhill &middot; Graduation cake</figcaption>
+              </figure>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous review</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next review</span>
+          </button>
+        </div>
+        <p class="text-center small text-muted mt-2">Example reviews for this bootcamp project.</p>
+      </section>
     </main>
 
     <!-- Call to action (not shown on the contact page) -->
@@ -179,6 +287,9 @@
         <a href="contact.html">Get in touch</a> and let's make it happen.
       </p>
     </aside>
+
+    <!-- Back to top button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up" aria-hidden="true"></i></a>
 
     <!-- Site footer (same on every page) -->
     <footer class="site-footer">
@@ -192,21 +303,22 @@
             <h2 class="footer-heading">Contact</h2>
             <!-- TODO: replace with real email and phone number, or remove -->
             <address class="mb-0">
-              32 Hamilton Close, Horley, Surrey, RH10 0NU<br>
-              <a href="mailto:hello@janescakes.co.uk">hello@janescakes.co.uk</a><br>
-              <a href="tel:+441234567890">01234 567890</a>
+              <i class="bi bi-geo-alt me-1" aria-hidden="true"></i>32 Hamilton Close, Horley, Surrey, RH10 0NU<br>
+              <i class="bi bi-envelope me-1" aria-hidden="true"></i><a href="mailto:hello@janescakes.co.uk">hello@janescakes.co.uk</a><br>
+              <i class="bi bi-telephone me-1" aria-hidden="true"></i><a href="tel:+441234567890">01234 567890</a>
             </address>
           </div>
           <div class="col">
             <h2 class="footer-heading">Follow us</h2>
             <!-- TODO: replace with Jane's real social media pages -->
             <ul class="list-unstyled mb-0">
-              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram (opens in a new tab)">Instagram</a></li>
-              <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook (opens in a new tab)">Facebook</a></li>
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram (opens in a new tab)"><i class="bi bi-instagram me-1" aria-hidden="true"></i>Instagram</a></li>
+              <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook (opens in a new tab)"><i class="bi bi-facebook me-1" aria-hidden="true"></i>Facebook</a></li>
             </ul>
           </div>
         </div>
-        <p class="footer-copy">&copy; 2026 Jane's Cakes. All rights reserved.</p>
+        <p class="footer-copy">&copy; 2026 Jane's Cakes. All rights reserved.<br>
+          <span class="small">Jane's Cakes is a fictional business created for a coding bootcamp project.</span></p>
       </div>
     </footer>
 

@@ -12,7 +12,8 @@ p {
 
 h1,
 h2,
-h3 {
+h3,
+.h3 {
   color: #8a2f52; /* berry, from the logo */
 }
 
@@ -51,16 +52,35 @@ h3 {
 
 /* Menu links: berry colour and pink underline for hover and current page */
 .navbar .nav-link {
+  position: relative;
   color: #4a3a3f;
   font-weight: 500;
   margin: 0 0.25rem;
-  border-bottom: 2px solid transparent;
+}
+
+/* Animated underline that slides in from the centre on hover */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0;
+  height: 2px;
+  background-color: #d98a9c;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
 }
 
 .navbar .nav-link:hover,
+.navbar .nav-link:focus-visible,
 .navbar .nav-link.active {
   color: #8a2f52;
-  border-bottom-color: #d98a9c;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link:focus-visible::after,
+.navbar .nav-link.active::after {
+  transform: scaleX(1);
 }
 
 /* ---------- Buttons ---------- */
@@ -191,4 +211,454 @@ main a:not(.btn):hover,
   border-top: 1px solid #ecd3da;
   padding-top: 1rem;
   margin: 2rem 0 0;
+}
+
+/* ---------- Home and About intro images ---------- */
+/* 4:3 crop so the photo is closer to the height of the text beside it */
+.hero-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Home page: wider, shorter crop so the photo matches the height of the shorter text */
+.hero-img-wide {
+  aspect-ratio: 3 / 2;
+  object-position: center 35%; /* keep the faces in view */
+}
+
+/* ==========================================
+   Interactive features
+   ========================================== */
+
+/* ---------- Page fade-in ---------- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: none; } /* "none" so pop-ups and the sticky navbar still layer correctly */
+}
+
+.fade-in {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+/* ---------- Buttons ---------- */
+.btn-cake {
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-cake:hover,
+.btn-cake:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(138, 47, 82, 0.25);
+}
+
+/* ---------- Hover zoom cards (home occasions) ---------- */
+.zoom-card {
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zoom-card .card-img-top {
+  transition: transform 0.4s ease;
+}
+
+.zoom-card:hover,
+.zoom-card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.zoom-card:hover .card-img-top,
+.zoom-card:focus-within .card-img-top {
+  transform: scale(1.08);
+}
+
+/* ---------- Back to top button ---------- */
+.back-to-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1030;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #b5566e;
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.back-to-top:hover,
+.back-to-top:focus-visible {
+  background-color: #9c3f58;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* ---------- Form feedback (contact page) ---------- */
+/* While typing, a field's border turns green when the entry is valid and red when it isn't */
+.contact-form .form-control:focus:valid,
+.contact-form .form-select:focus:valid {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.2);
+}
+
+.contact-form .form-control:focus:invalid,
+.contact-form .form-select:focus:invalid {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.2);
+}
+
+/* ---------- Respect "reduce motion" settings ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- How to order steps (home) ---------- */
+.step-card {
+  position: relative;
+  text-align: center;
+  background-color: #fdf2f4;
+  border-radius: 12px;
+  padding: 2rem 1.5rem 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  background-color: #b5566e;
+  color: white;
+  font-weight: 700;
+}
+
+.step-icon {
+  display: block;
+  font-size: 2.5rem;
+  color: #8a2f52;
+  margin-bottom: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover .step-icon {
+  transform: scale(1.15) rotate(-6deg);
+}
+
+.step-card p {
+  margin-bottom: 0;
+}
+
+/* ---------- Reviews carousel (home) ---------- */
+.reviews-carousel {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-bottom: 2.5rem; /* room for the indicator dots */
+}
+
+.review-card {
+  text-align: center;
+  background-color: #fdf2f4;
+  border-radius: 12px;
+  padding: 2.5rem 4rem;
+  margin: 0;
+}
+
+.review-stars {
+  color: #b5566e;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.15rem;
+}
+
+.review-card .blockquote p {
+  font-style: italic;
+}
+
+.review-author {
+  font-weight: 600;
+  color: #8a2f52;
+}
+
+.reviews-carousel .carousel-indicators {
+  margin-bottom: 0;
+}
+
+/* Narrower arrow areas so they sit beside the review text, not on top of it */
+.reviews-carousel .carousel-control-prev,
+.reviews-carousel .carousel-control-next {
+  width: 3.5rem;
+}
+
+.reviews-carousel .carousel-indicators [data-bs-target] {
+  background-color: #b5566e;
+}
+
+@media (max-width: 575.98px) {
+  .review-card {
+    padding: 2rem 3rem;
+  }
+}
+
+/* ---------- Timeline (about) ---------- */
+.timeline {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/* The vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 24px;
+  width: 4px;
+  background-color: #d98a9c;
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 72px;
+  margin-bottom: 2rem;
+}
+
+/* The circle on the line, with an icon */
+.timeline-dot {
+  position: absolute;
+  left: 2px;
+  top: 0.75rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+  border: 4px solid #d98a9c;
+  color: #8a2f52;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-content {
+  background-color: #fdf2f4;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content p {
+  margin-bottom: 0;
+}
+
+.timeline-year {
+  display: inline-block;
+  background-color: #b5566e;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.15rem 0.75rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+}
+
+/* Hover: the card lifts and the dot fills with colour */
+.timeline-item:hover .timeline-content {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:hover .timeline-dot {
+  background-color: #b5566e;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Each milestone fades in one after another */
+.timeline-item {
+  animation: fadeInUp 0.6s ease-out both;
+}
+.timeline-item:nth-child(2) { animation-delay: 0.1s; }
+.timeline-item:nth-child(3) { animation-delay: 0.2s; }
+.timeline-item:nth-child(4) { animation-delay: 0.3s; }
+.timeline-item:nth-child(5) { animation-delay: 0.4s; }
+.timeline-item:nth-child(6) { animation-delay: 0.5s; }
+
+/* Tablets and up: line in the centre, cards alternate left and right */
+@media (min-width: 768px) {
+  .timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-item {
+    width: 50%;
+    padding-left: 0;
+    padding-right: 48px;
+  }
+
+  .timeline-item:nth-child(even) {
+    margin-left: 50%;
+    padding-right: 0;
+    padding-left: 48px;
+  }
+
+  .timeline-dot {
+    left: auto;
+    right: -24px;
+  }
+
+  .timeline-item:nth-child(even) .timeline-dot {
+    right: auto;
+    left: -24px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content {
+    text-align: right;
+  }
+}
+
+/* ---------- Portfolio: hover zoom, overlay and enlarge ---------- */
+.portfolio-card {
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover,
+.portfolio-card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* The photo is a button that opens the enlarged version */
+.portfolio-zoom {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.portfolio-zoom img {
+  display: block;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-zoom:hover img,
+.portfolio-zoom:focus-visible img {
+  transform: scale(1.1);
+}
+
+/* "View larger" label that slides up over the photo */
+.portfolio-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.6rem;
+  background-color: rgba(138, 47, 82, 0.88);
+  color: white;
+  font-weight: 600;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-zoom:hover .portfolio-overlay,
+.portfolio-zoom:focus-visible .portfolio-overlay {
+  transform: translateY(0);
+}
+
+.portfolio-zoom:focus-visible {
+  outline: 3px solid #8a2f52;
+  outline-offset: -3px;
+}
+
+/* Enlarged photo in the pop-up */
+.modal-cake-img {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.modal-content {
+  border-radius: 12px;
+}
+
+.modal-header {
+  background-color: #fdf2f4;
+}
+
+/* ---------- FAQ accordion (contact) ---------- */
+.faq-accordion {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faq-accordion .accordion-item {
+  border-color: #ecd3da;
+}
+
+.faq-accordion .accordion-button {
+  font-weight: 600;
+  color: #4a3a3f;
+}
+
+.faq-accordion .accordion-button:hover {
+  background-color: #fdf2f4;
+}
+
+/* Open question: pink background, berry text */
+.faq-accordion .accordion-button:not(.collapsed) {
+  background-color: #fdf2f4;
+  color: #8a2f52;
+  box-shadow: inset 0 -1px 0 #ecd3da;
+}
+
+.faq-accordion .accordion-button:focus {
+  border-color: #d98a9c;
+  box-shadow: 0 0 0 0.2rem rgba(217, 138, 156, 0.35);
+}
+
+/* Berry-coloured arrow when a question is open */
+.faq-accordion {
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%238a2f52' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
 }

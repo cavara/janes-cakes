@@ -59,10 +59,10 @@ The website aims to:
 
 | Page | Features | User Benefit |
 |------|----------|--------------|
-| **Home** (`index.html`) | Welcome section with photo and introduction; cards for the four main occasions (Birthdays, Weddings, Graduations, Baby Showers); "Order a cake" button | Visitors can see within seconds what the business offers and which occasions it caters for, with a clear next step if they want to order. |
-| **About** (`about.html`) | Jane's story, her experience and her approach to ingredients and baking; "Order a cake" button | Builds trust by putting a face and a story behind the business, showing customers they are buying from a skilled, caring baker. |
-| **Portfolio** (`portfolio.html`) | Gallery of 12 cake styles in a responsive grid (4 per row on desktop, 2 on tablet, 1 on mobile), each with a short description | Lets customers browse real examples of Jane's work, compare styles and get inspiration before they get in touch. |
-| **Contact** (`contact.html`) | Enquiry form (name, email, occasion, date needed, delivery or collection, cake description) that emails Jane via Formspree; embedded Google Map; address and contact details; 48-hour response promise; **Delivery & Collection** section covering collection, local delivery, wedding cake set-up, how far ahead to order, travelling with a cake, and allergies | Makes ordering simple: customers can send everything Jane needs in one go, see where she is based, and know when to expect a reply. The delivery section answers the practical "how do I get my cake?" questions before customers need to ask. On mobile the form appears first. |
+| **Home** (`index.html`) | Welcome section with photo and introduction; occasion cards that zoom and lift on hover; "How to order" in three illustrated steps; customer reviews in an auto-playing Bootstrap carousel with star ratings | Visitors see straight away what Jane offers and how simple ordering is, and reviews from other customers build confidence. |
+| **About** (`about.html`) | Jane's story and photo; an illustrated timeline of her baking journey (2014–2026) that animates in and highlights each milestone on hover | Builds trust by showing Jane's experience, qualifications and how the business has grown. |
+| **Portfolio** (`portfolio.html`) | Gallery of 12 cakes in a responsive grid; photos zoom on hover with a "View larger" label; clicking a photo opens it full size in a Bootstrap modal; an "Enquire" button on every cake | Customers can look at each cake in detail and go straight from a design they like to the enquiry form. |
+| **Contact** (`contact.html`) | Enquiry form (name, email, occasion, date needed, delivery or collection, cake description) that emails Jane via Formspree; embedded Google Map; address and contact details; 48-hour response promise; **Delivery & Collection** section covering collection, local delivery, wedding cake set-up, how far ahead to order, travelling with a cake, and allergies; **FAQ accordion** answering questions on payment, design changes, portions, storage and cancellations; form fields that turn green or red as they are filled in | Makes ordering simple: customers can send everything Jane needs in one go, see where she is based, and know when to expect a reply. The delivery section answers the practical "how do I get my cake?" questions before customers need to ask. On mobile the form appears first. |
 
 **Site-wide features:**
 
@@ -74,6 +74,9 @@ The website aims to:
 | Site-wide footer with Jane's address, email, phone, social media links and copyright | Contact details are always one scroll away, and the footer gives every page a finished, professional look. |
 | "Get in touch" call to action above the footer (Home, About and Portfolio pages) | Gives visitors one more prompt to get in touch when they reach the end of a page. Left off the contact page, where it would only link back to the same page. |
 | Accessibility: descriptive alt text, logical heading order, colour contrast that meets WCAG AA | The site can be used by people with screen readers or visual impairments (Lighthouse Accessibility score of 100 on every page). |
+| Interactive hover effects: animated navbar underline, buttons and cards that lift, photo zoom | Makes the site feel responsive and engaging, and shows visitors what they can click. |
+| Bootstrap Icons in the footer, contact details, timeline and order steps | Information is quicker to scan and the site looks more polished. |
+| Fade-in animations and a floating "back to top" button, with animations switched off for visitors who set their device to reduce motion | Smooth, modern feel and easy navigation on long pages, without causing discomfort for motion-sensitive users. |
 | Optimised images with lazy loading | Pages load quickly, even on mobile data (Lighthouse Performance 96–99). |
 
 ---
@@ -82,7 +85,8 @@ The website aims to:
 
 - HTML5
 - CSS3 (`assets/css/style.css`)
-- [Bootstrap 5.3.3](https://getbootstrap.com/)
+- [Bootstrap 5.3.3](https://getbootstrap.com/) (grid, navbar, cards, carousel, modal and accordion components)
+- [Bootstrap Icons 1.11.3](https://icons.getbootstrap.com/)
 - Google Maps embed
 - [Formspree](https://formspree.io/) (sends contact form enquiries by email)
 - Git and GitHub
@@ -277,9 +281,9 @@ The colours were taken from the Jane's Cakes logo to give the site a warm, frien
 |--------|---------|
 | **Custom confirmation message** on the site after an enquiry is sent, instead of Formspree's default thank-you page | Keeps customers on Jane's site and reassures them their message has arrived. |
 | **Delivery postcode checker** that shows the delivery price for a postcode | Customers can see straight away whether Jane delivers to them and how much it costs. |
-| **Customer reviews and testimonials** section on the home page | Builds trust with new customers through social proof. |
+| **Real customer reviews**, collected through a review form, to replace the example reviews | Genuine social proof from Jane's customers. |
 | **Price guide** showing starting prices for each cake type and size | Helps customers check their budget before getting in touch. |
-| **Portfolio filters** (e.g. Birthdays, Weddings, Graduations) and a lightbox to view photos full size | Makes the growing portfolio easier to browse. |
+| **Portfolio filters** (e.g. Birthdays, Weddings, Graduations) | Makes the growing portfolio easier to browse. |
 | **Online ordering and payment**, using a service such as Stripe | Customers could book and pay a deposit online. |
 | **Instagram feed** embedded on the home page | Instagram is popular for cake businesses, so visitors could see Jane's latest bakes. |
 | **Own photography** to replace the stock and AI-generated images | Shows Jane's real cakes and removes any copyright concerns. |
