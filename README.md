@@ -77,7 +77,7 @@ The website aims to:
 | Interactive hover effects: animated navbar underline, buttons and cards that lift, photo zoom | Makes the site feel responsive and engaging, and shows visitors what they can click. |
 | Bootstrap Icons in the footer, contact details, timeline and order steps | Information is quicker to scan and the site looks more polished. |
 | Fade-in animations and a floating "back to top" button, with animations switched off for visitors who set their device to reduce motion | Smooth, modern feel and easy navigation on long pages, without causing discomfort for motion-sensitive users. |
-| Optimised images with lazy loading | Pages load quickly, even on mobile data (Lighthouse Performance 96–99). |
+| Optimised images with lazy loading | Pages load quickly, even on mobile data (Lighthouse Performance 95–99). |
 
 ---
 
@@ -156,8 +156,8 @@ All pages were tested in an Incognito window to stop browser extensions affectin
 |------|-------------|---------------|----------------|-----|------------|
 | Home | 98 | 100 | 100 | 100 | <img src="docs/testing/lighthouse-home.png" alt="Lighthouse scores for the home page" width="250"> |
 | About | 99 | 100 | 100 | 100 | <img src="docs/testing/lighthouse-about.png" alt="Lighthouse scores for the about page" width="250"> |
-| Portfolio | 96 | 100 | 100 | 100 | <img src="docs/testing/lighthouse-portfolio.png" alt="Lighthouse scores for the portfolio page" width="250"> |
-| Contact | 99 | 100 | 100 | 100 | <img src="docs/testing/lighthouse-contact.png" alt="Lighthouse scores for the contact page" width="250"> |
+| Portfolio | 95 | 100 | 100 | 100 | <img src="docs/testing/lighthouse-portfolio.png" alt="Lighthouse scores for the portfolio page" width="250"> |
+| Contact | 98 | 100 | 100 | 100 | <img src="docs/testing/lighthouse-contact.png" alt="Lighthouse scores for the contact page" width="250"> |
 
 The home page originally scored 58 for Performance. This was improved to 98 by compressing the main photo and lazy-loading images further down the page (see [Bugs / Errors](#bugs--errors)).
 
