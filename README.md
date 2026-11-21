@@ -185,6 +185,7 @@ The home page originally scored 58 for Performance. This was improved to 98 by c
 | Lighthouse Performance score of 58 on the home page (mobile) | The main home page photo was a 3.9 MB, 1264×1264 PNG | Resized to 800×800 and converted to WebP (81 KB, about 98% smaller) | Fixed |
 | Lighthouse SEO and Best Practices points lost | Pages had no meta description, and the missing favicon caused a console error | Added a meta description to each page and linked the logo as the favicon | Fixed |
 | Lighthouse Accessibility score of 96 on the contact page: "insufficient contrast ratio" | White text on the light pink `.btn-cake` button (`#d98a9c`) had a contrast ratio of only 2.6:1; WCAG AA needs 4.5:1 | Changed the button to a deeper pink (`#b5566e`, 4.6:1) and the hover colour to `#9c3f58` | Fixed |
+| W3C HTML validator: "aria-labelledby must not be specified on any div element" (12 errors on the portfolio page) | The Bootstrap modal pop-ups used `aria-labelledby` without a `role`, as in Bootstrap's own example code | Added `role="dialog"` to each modal so screen readers announce it as a pop-up with its cake name | Fixed |
 
 ---
 
