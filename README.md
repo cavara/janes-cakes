@@ -237,6 +237,8 @@ I used **Claude** (Anthropic's AI assistant) during this project as a coding ass
 
 AI also suggested some styling and layout changes, which I reviewed and adapted.
 
+Interactive features: building the reviews carousel, timeline, portfolio pop-ups, FAQ accordion and hover effects, which I reviewed, tested and adapted.
+
 The main photo on the home page (`women-baking-cakes.webp`) was generated with **Canva's AI image generator**. The Jane's Cakes logo (`Janes_Cakes_Logo.svg`) was generated with **Grok** (xAI).
 
 **What I did myself:**
